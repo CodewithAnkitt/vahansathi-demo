@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Vahansathi | Transport Management</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- =====================================================
+         SIDEBAR
+    ====================================================== -->
+
+    <aside class="sidebar" id="sidebar">
+
+        <!-- BRAND -->
+
+        <div class="brand">
+
+            <div class="brand-logo">
+                <i data-lucide="truck"></i>
+            </div>
+
+            <div class="brand-text">
+                <h2>Vahansathi</h2>
+                <span>Transport Management</span>
+            </div>
+
+            <button
+                class="mobile-close"
+                id="mobileClose"
+                title="Close Sidebar"
+            >
+                <i data-lucide="x"></i>
+            </button>
+
+        </div>
+
+
+        <!-- SIDEBAR CONTENT -->
+
+        <div class="sidebar-content">
+
+            <!-- DASHBOARD -->
+
+            <button
+                class="nav-item active"
+                data-page="dashboard"
+                data-tooltip="Dashboard"
+            >
+                <i data-lucide="layout-dashboard"></i>
+                <span>Dashboard</span>
+            </button>
+
+
+            <!-- ROUTE MANAGEMENT -->
+
+            <div class="nav-heading">
+                ROUTE MANAGEMENT
+            </div>
+
+
+            <button
+                class="nav-item route-item"
+                data-page="routes"
+                data-tooltip="Bokaro → Dhanbad"
+            >
+                <i data-lucide="route"></i>
+                <span>Bokaro → Dhanbad</span>
+            </button>
+
+
+            <button
+                class="nav-item route-item"
+                data-page="routes"
+                data-tooltip="Dhanbad → Ramgarh"
+            >
+                <i data-lucide="route"></i>
+                <span>Dhanbad → Ramgarh</span>
+            </button>
+
+
+            <button
+                class="nav-item route-item"
+                data-page="routes"
+                data-tooltip="Ramgarh → Purimari"
+            >
+                <i data-lucide="route"></i>
+                <span>Ramgarh → Purimari</span>
+            </button>
+
+
+            <!-- VEHICLE MANAGEMENT -->
+
+            <div class="nav-heading">
+                VEHICLE MANAGEMENT
+            </div>
+
+
+            <button
+                class="nav-item"
+                data-page="vehicles"
+                data-tooltip="Vehicles"
+            >
+                <i data-lucide="truck"></i>
+                <span>Vehicles</span>
+            </button>
+
+
+            <button
+                class="nav-item"
+                data-page="owners"
+                data-tooltip="Vehicle Owners"
+            >
+                <i data-lucide="users"></i>
+                <span>Vehicle Owners</span>
+            </button>
+
+
+            <button
+                class="nav-item"
+                data-page="trips"
+                data-tooltip="Trip Reports"
+            >
+                <i data-lucide="clipboard-list"></i>
+                <span>Trip Reports</span>
+            </button>
+
+
+            <!-- FINANCE -->
+
+            <div class="nav-heading">
+                FINANCE
+            </div>
+
+
+            <button
+                class="nav-item"
+                data-page="withdrawals"
+                data-tooltip="Withdrawal Requests"
+            >
+                <i data-lucide="wallet"></i>
+                <span>Withdrawal Requests</span>
+
+                <b class="notification-count">
+                    3
+                </b>
+            </button>
+
+
+            <button
+                class="nav-item"
+                data-page="payments"
+                data-tooltip="Payments"
+            >
+                <i data-lucide="credit-card"></i>
+                <span>Payments</span>
+            </button>
+
+
+            <button
+                class="nav-item"
+                data-page="expenses"
+                data-tooltip="Expense & Fuel"
+            >
+                <i data-lucide="fuel"></i>
+                <span>Expense & Fuel</span>
+            </button>
+             
+             <!-- VEHICLE OWNER PORTAL -->
+
+<div class="nav-heading">
+    VEHICLE OWNER PORTAL
+</div>
+
+<button
+    class="nav-item"
+    data-page="owner-dashboard"
+    data-tooltip="Vehicle Owner Dashboard"
+>
+    <i data-lucide="layout-dashboard"></i>
+    <span>Vehicle Owner Dashboard</span>
+</button>
+
+<button
+    class="nav-item"
+    data-page="owner-vehicles"
+    data-tooltip="My Vehicles"
+>
+    <i data-lucide="truck"></i>
+    <span>My Vehicles</span>
+</button>
+
+<button
+    class="nav-item"
+    data-page="owner-trips"
+    data-tooltip="My Trips"
+>
+    <i data-lucide="clipboard-list"></i>
+    <span>My Trips</span>
+</button>
+
+<button
+    class="nav-item"
+    data-page="owner-earnings"
+    data-tooltip="My Earnings"
+>
+    <i data-lucide="indian-rupee"></i>
+    <span>My Earnings</span>
+</button>
+
+<button
+    class="nav-item"
+    data-page="owner-withdrawals"
+    data-tooltip="Withdrawals"
+>
+    <i data-lucide="wallet"></i>
+    <span>Withdrawals</span>
+</button>
+
+<button
+    class="nav-item"
+    data-page="owner-bank"
+    data-tooltip="Bank Details"
+>
+    <i data-lucide="landmark"></i>
+    <span>Bank Details</span>
+</button>
+
+<button
+    class="nav-item"
+    data-page="owner-notifications"
+    data-tooltip="Notifications"
+>
+    <i data-lucide="bell"></i>
+    <span>Notifications</span>
+</button>
+
+<button
+    class="nav-item"
+    data-page="owner-profile"
+    data-tooltip="Profile"
+>
+    <i data-lucide="user-circle"></i>
+    <span>Profile</span>
+</button>
+
+            <!-- OTHERS -->
+
+            <div class="nav-heading">
+                OTHERS
+            </div>
+
+
+            <button
+                class="nav-item"
+                data-page="users"
+                data-tooltip="Users"
+            >
+                <i data-lucide="users-round"></i>
+                <span>Users</span>
+            </button>
+
+
+            <button
+                class="nav-item"
+                data-page="settings"
+                data-tooltip="Settings"
+            >
+                <i data-lucide="settings"></i>
+                <span>Settings</span>
+            </button>
+
+        </div>
+
+
+        <!-- LOGOUT -->
+
+        <div class="sidebar-bottom">
+
+            <button
+                class="nav-item logout"
+                data-tooltip="Logout"
+            >
+                <i data-lucide="log-out"></i>
+                <span>Logout</span>
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <!-- =====================================================
+         MAIN
+    ====================================================== -->
+
+    <main class="main">
+
+
+        <!-- TOPBAR -->
+
+        <header class="topbar">
+
+            <!-- THREE LINE SIDEBAR BUTTON -->
+
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                title="Open / Close Sidebar"
+            >
+                <i data-lucide="menu"></i>
+            </button>
+
+
+            <!-- SEARCH -->
+
+            <div class="search-box">
+
+                <i data-lucide="search"></i>
+
+                <input
+                    type="text"
+                    id="globalSearch"
+                    placeholder="Search vehicle, owner, trip..."
+                >
+
+            </div>
+
+
+            <!-- TOP RIGHT -->
+
+            <div class="topbar-right">
+
+
+                <!-- DATE -->
+
+                <button class="date-button">
+
+                    <i data-lucide="calendar-days"></i>
+
+                    <span>
+                        Sunday, 14 Sep 2026
+                    </span>
+
+                </button>
+
+
+                <!-- NOTIFICATION -->
+
+                <button class="icon-button notification-button">
+
+                    <i data-lucide="bell"></i>
+
+                    <span class="notification-dot">
+                        3
+                    </span>
+
+                </button>
+
+
+                <!-- PROFILE -->
+
+                <div class="profile">
+
+                    <div class="profile-avatar">
+                        RS
+                    </div>
+
+                    <div class="profile-info">
+
+                        <strong>
+                            Dheeraj Yadav
+                        </strong>
+
+                        <span>
+                            Company Owner
+                        </span>
+
+                    </div>
+
+                    <i data-lucide="chevron-down"></i>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- PAGE CONTENT -->
+
+        <section
+            class="content"
+            id="pageContent"
+        >
+        </section>
+
+
+        <!-- FOOTER -->
+
+        <footer>
+
+            <span>
+                © 2026 Vahansathi. All rights reserved.
+            </span>
+
+            <div>
+
+                <span>
+                    Drive Safe
+                </span>
+
+                <span>|</span>
+
+                <span>
+                    Move Green
+                </span>
+
+                <span>|</span>
+
+                <span>
+                    Grow Together
+                </span>
+
+            </div>
+
+        </footer>
+
+    </main>
+
+</div>
+
+
+<!-- MOBILE SIDEBAR OVERLAY -->
+
+<div
+    class="sidebar-overlay"
+    id="sidebarOverlay"
+></div>
+
+
+<!-- JAVASCRIPT -->
+
+<script src="js/app.js"></script>
+
+</body>
+
+</html>
