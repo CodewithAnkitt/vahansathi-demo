@@ -315,7 +315,7 @@ function dashboardPage() {
                             class="route-tab"
                             data-route="ramgarh"
                         >
-                            Ramgarh → Purimari
+                            Ramgarh → Urimari
                         </button>
 
                     </div>
@@ -550,98 +550,7 @@ function dashboardPage() {
             </div>
 
 
-            <!-- =================================================
-                 INFORMATION CARDS
-            ================================================== -->
-
-            <div class="info-grid">
-
-
-                <div class="info-card">
-
-                    <div class="info-icon">
-
-                        <i data-lucide="fuel"></i>
-
-                    </div>
-
-                    <div>
-
-                        <span>
-                            Diesel Price (Fixed for Today)
-                        </span>
-
-                        <strong>
-                            ₹110 per Litre
-                        </strong>
-
-                        <p>
-                            This rate is used for all trips
-                            in Bokaro → Dhanbad.
-                        </p>
-
-                    </div>
-
-                </div>
-
-
-                <div class="info-card">
-
-                    <div class="info-icon">
-
-                        <i data-lucide="calculator"></i>
-
-                    </div>
-
-                    <div>
-
-                        <span>
-                            Net Earning Formula (Per Trip)
-                        </span>
-
-                        <strong>
-                            Trip Amount − Diesel Cost − ₹300
-                        </strong>
-
-                        <p>
-                            Fixed charge is deducted
-                            for every completed trip.
-                        </p>
-
-                    </div>
-
-                </div>
-
-
-                <div class="info-card">
-
-                    <div class="info-icon">
-
-                        <i data-lucide="circle-dollar-sign"></i>
-
-                    </div>
-
-                    <div>
-
-                        <span>
-                            Fixed Charge
-                        </span>
-
-                        <strong>
-                            ₹300
-                        </strong>
-
-                        <p>
-                            deducted for every trip
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
+           
 
     `;
 
@@ -2425,7 +2334,7 @@ function setupRouteTabs() {
                 ) {
 
                     showRouteMessage(
-                        "Ramgarh → Purimari"
+                        "Ramgarh → Urimari"
                     );
 
                 } else {
